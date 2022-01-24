@@ -1,22 +1,33 @@
 <?php
+/*
+Cutlets Recipe:
+ 1 carrots,
+ 1 egg,
+ 100 ml milk,
+ 20 gr butter,
+ 55 gr manka,
+ 1 ch lozh salt,
+*/
 
-function cookRiceballs
-(int $rice, 
- int $egg, 
- int $cheese, 
- int $dill, 
- int $salt, 
- int $vegetable_oil, 
- string $feedbacks)
-{   echo
-   "1. Boil $rice grams of rice normally. Cool and add $egg eggs. 
-    2. We rub  $cheese grams of cheese on a fine grater. 
-    3. Adding $salt grams of salt to rice. 
-    4. Adding grated cheese. 
-    5. Chop $dill branches of greens and also add to the rice.
-    6. We form riceballs, bread them in flour.
-    7. Fry them on both sides in $vegetable_oil milliliters of vegetable oil on both sides.
-    Riceballs are ready.
-    $feedbacks.";
-}
-cookRiceballs(250, 1, 100, 3, 30, 100, "That's grate");
+function cookCutlets
+(int $carrots,
+ int $egg,
+ int $milk,
+ int $butter,
+ int $manka,
+ int $salt,
+ string $wishes)
+{
+	echo 
+	"1.Peel the $carrots, grate on a small grater. <br>
+	 2.In a suitable size pan, melt $butter. <br>
+	 3.Simmer $carrots on moderate heat <br>
+	 4.Pour $milk into the pan, $salt a little, stir <br>
+	 5.Cool $carrots. <br>
+	 6.Add the whipped $egg to the cooled $carrot mass. <br>
+	 7.It turns out a thick, viscous mass. It practically does not stick to the hands and cutlets are easy to form.<br>
+	 $wishes";
+	 /*Serve carrot cutlets warm or cooled as an independent dish. 
+     It can be with sour cream or with milk or cream sauce. Enjoy your meal!*/
+ }	 
+ cookCutlets(1, 1, 100, 20, 55, 1, 'Bon appetit');
